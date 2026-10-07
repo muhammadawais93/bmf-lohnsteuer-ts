@@ -1,0 +1,30 @@
+{
+  "name": "bmf-lohnsteuer-ts",
+  "version": "0.1.0",
+  "description": "German wage tax (Lohnsteuer) calculation in TypeScript, following the BMF Programmablaufplan",
+  "license": "MIT",
+  "author": "Muhammad Awais",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammadawais93/bmf-lohnsteuer-ts.git"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
